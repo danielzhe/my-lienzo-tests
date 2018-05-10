@@ -18,7 +18,10 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
+
 import org.roger600.lienzo.client.casemodeller.CaseModellerContainmentTests;
+import org.roger600.lienzo.client.charts.tests.BarChartViewComponentTests;
+import org.roger600.lienzo.client.charts.tests.PieChartComponentTests;
 import org.roger600.lienzo.client.ks.CardinalIntersectKSTests;
 import org.roger600.lienzo.client.ks.MultiPathResizeTests;
 import org.roger600.lienzo.client.ks.WiresAlignDistroTests;
@@ -85,6 +88,9 @@ public class LienzoTests implements EntryPoint {
             new WiresSquaresTests(),
             new WiresResizesTests(),
             new WiresDockingTests(),
+            // Lienzo-Charts
+            new BarChartViewComponentTests(),
+            new PieChartComponentTests()
     };
 
     private static final int MAX_BUTTONS_ROW = 7;
